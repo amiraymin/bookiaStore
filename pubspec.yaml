@@ -9,6 +9,9 @@ environment:
 dependencies:
   flutter:
     sdk: flutter
+  easy_localization: ^3.0.8
+  flutter_screenutil: ^5.9.3
+  flutter_native_splash: ^2.4.8
 
 dev_dependencies:
   flutter_test:
@@ -17,3 +20,9 @@ dev_dependencies:
 
 flutter:
   uses-material-design: true
+  fonts:
+    - family: DM
+      fonts:
+        - asset: assets/fonts/DMSerifDisplay-Regular.ttf
+        - asset: assets/fonts/DMSerifDisplay-Italic.ttf
+          style: italic
