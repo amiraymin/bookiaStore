@@ -1,19 +1,30 @@
 import 'package:bookia_project/core/routes/app_router.dart';
 import 'package:bookia_project/core/routes/app_routes.dart';
-import 'package:bookia_project/features/auth/presentation/ui/login_screen.dart';
-import 'package:bookia_project/features/auth/presentation/ui/register_screen.dart';
-import 'package:bookia_project/features/home/presentation/ui/home.dart';
+import 'package:bookia_project/core/theme/app_colors.dart';
+
+import 'package:easy_localization/easy_localization.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter_screenutil/flutter_screenutil.dart';
 
-class bookia extends StatelessWidget {
-  const bookia({super.key});
-
+class BookiaApp extends StatelessWidget {
+  const BookiaApp({super.key});
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(
-    initialRoute: AppRoutes.loginScreen,
-    onGenerateRoute: AppRouter.onGenerateRoute
-    
+    return ScreenUtilInit(
+      designSize: const Size(375, 812),
+      minTextAdapt: true,
+      splitScreenMode: true,
+      child: MaterialApp(
+        localizationsDelegates: context.localizationDelegates,
+        supportedLocales: context.supportedLocales,
+        locale: context.locale,
+        theme: ThemeData(
+          fontFamily: 'DM',
+          scaffoldBackgroundColor: AppColors.bgColor,
+        ),
+        initialRoute: AppRoutes.splashScreen,
+        onGenerateRoute: AppRouter.onGenerateRoute,
+      ),
     );
   }
 }

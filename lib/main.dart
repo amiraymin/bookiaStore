@@ -10,6 +10,6 @@ void main() async {
     supportedLocales: [Locale('en'), Locale('ar')],
     path: 'assets/translations',
     fallbackLocale: Locale('en'),
-    child: bookia(),
+    child: const BookiaApp(),
   )); // EasyLocalization
 }
