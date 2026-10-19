@@ -11,5 +11,6 @@ void main() async {
     path: 'assets/translations',
     fallbackLocale: Locale('en'),
     child: const BookiaApp(),
-  )); // EasyLocalization
+   )
+  ); // EasyLocalization
 }

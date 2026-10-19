@@ -1,3 +1,4 @@
+import 'package:bookia_project/core/routes/app_routes.dart';
 import 'package:flutter/material.dart';
 
 class LoginScreen extends StatelessWidget {
@@ -5,6 +6,12 @@ class LoginScreen extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const Scaffold();
+    return Scaffold(
+      body: Column(
+        children: [
+          Text("Login Screen")
+        ],
+      )
+    );
   }
 }
