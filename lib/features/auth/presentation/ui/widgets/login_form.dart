@@ -1,3 +1,5 @@
+import 'package:bookia_project/core/theme/app_colors.dart';
+import 'package:bookia_project/core/theme/app_text_style.dart';
 import 'package:bookia_project/core/utils/app_validator.dart';
 import 'package:bookia_project/core/widgets/app_Botton.dart';
 import 'package:bookia_project/core/widgets/custom_text_form_feild.dart';
@@ -28,7 +30,6 @@ class _LoginFormState extends State<LoginForm> {
               if (!AppValidator().isEmailValid(v ?? "")) {
                 return "Plese Enter your Email";
               }
-             
             },
             hintText: 'Enter your email',
             isPassword: false,
@@ -45,13 +46,31 @@ class _LoginFormState extends State<LoginForm> {
             hintText: 'Enter your password',
             isPassword: true,
           ),
+          Row(
+            mainAxisAlignment: MainAxisAlignment.end,
+            children: [
+              Text("Forgot Password?",
+               style: AppTextStyles().hintTextStyle),
+            ],
+          ),
           30.verticalSpace,
-          AppBotton(
-            title: "Login",
+          AppBotton(title: "Login",
             onTap: () {
               formState.currentState?.validate();
             },
           ),
+          20.verticalSpace,
+          Text("Or",
+           style: AppTextStyles().hintTextStyle),
+          20.verticalSpace,
+          AppBotton(title: "Sign in with Google",
+            bgColor: Colors.white,
+            textColor: AppColors.grayColor,
+          ),
+          8.verticalSpace,
+          AppBotton(title: "Sign in with Apple",
+           bgColor: Colors.white,
+            textColor: AppColors.grayColor,),
         ],
       ),
     );
