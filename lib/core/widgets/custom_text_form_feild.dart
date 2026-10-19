@@ -6,6 +6,7 @@ import 'package:flutter_screenutil/flutter_screenutil.dart';
 class CustomTextFormFeild extends StatefulWidget {
   final String hintText;
   final bool isPassword;
+  final TextEditingController? controller;
   final String? Function(String?)? validator;
 
   const CustomTextFormFeild({
@@ -13,6 +14,7 @@ class CustomTextFormFeild extends StatefulWidget {
     required this.hintText,
     this.isPassword = false,
      this.validator,
+      this.controller,
   });
 
   @override
@@ -24,6 +26,7 @@ class _CustomTextFormFeildState extends State<CustomTextFormFeild> {
   @override
   Widget build(BuildContext context) {
     return TextFormField(
+      controller: widget.controller,
       obscureText: widget.isPassword && isObscure,
       validator: widget.validator,
       onTapOutside: (v) {
