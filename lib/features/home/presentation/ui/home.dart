@@ -12,7 +12,7 @@ class HomeScreen extends StatelessWidget {
           onPressed: () {
             Navigator.pushNamed(context, AppRoutes.homeScreen);
           },
-          child: const Text('Go to Home Page'),
+          child: const Text('Home Page'),
         ),
       ),
     );

@@ -2,6 +2,8 @@ import 'package:bookia_project/core/routes/app_routes.dart';
 import 'package:bookia_project/core/theme/app_colors.dart';
 import 'package:bookia_project/core/theme/app_text_style.dart';
 import 'package:bookia_project/features/auth/presentation/ui/widgets/login_form.dart';
+import 'package:bookia_project/gen/locale_keys.g.dart';
+import 'package:easy_localization/easy_localization.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 
@@ -20,6 +22,7 @@ class LoginScreen extends StatelessWidget {
             child: Column(
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
+15.verticalSpace,
                 InkWell(
                   onTap: () {
                     Navigator.pushNamed(context, AppRoutes.welcomeScreen);
@@ -38,7 +41,7 @@ class LoginScreen extends StatelessWidget {
                 ),
                 100.verticalSpace,
                 Text(
-                  "Welcome back! Glad\nto see you, Again!",
+                  LocaleKeys.welcome_title.tr(),
                   style: AppTextStyles().font30Regular,
                 ),
                 30.verticalSpace,

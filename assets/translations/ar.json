@@ -1,7 +1,15 @@
 
 {
     "title": "بوكيا",
-    "subtitle": "اطلب كتابك الآن!",
+    "subtitle": "اطلب كتابك الآن",
     "login_button": "تسجيل الدخول",
-    "register_button": "إنشاء حساب"
+    "register_button": "إنشاء حساب",
+    "En":"Ar",
+    "welcome_title": "مرحباً بعودتك! يسعدنا رؤيتك مجدداً!",
+    "email_placeholder": "أدخل بريدك الإلكتروني",
+    "password_placeholder": "أدخل كلمة السر",
+    "forgot_password": "هل نسيت كلمة السر؟",
+    "or_divider": "أو",
+    "sign_in_google": "تسجيل الدخول بواسطة Google",
+    "sign_in_apple": "تسجيل الدخول بواسطة Apple"
 }

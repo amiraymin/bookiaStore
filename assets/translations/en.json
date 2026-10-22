@@ -2,5 +2,13 @@
     "title": "Bookia",
     "subtitle": "Order Your Book Now!",
     "login_button": "Login",
-    "register_button": "Register"
+    "register_button": "Register",
+    "En":"En",
+    "welcome_title": "Welcome back! Glad to see you, Again!",
+    "email_placeholder": "Enter your email",
+    "password_placeholder": "Enter your password",
+    "forgot_password": "Forgot Password?",
+    "or_divider": "Or",
+    "sign_in_google": "Sign in with Google",
+    "sign_in_apple": "Sign in with Apple"
 }
